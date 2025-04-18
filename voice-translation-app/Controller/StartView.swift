@@ -3,6 +3,7 @@ import SwiftUI
 struct StartView: View {
     @State private var selectedTab = "Translator"
     @State private var selectedAnimal = "dog"
+    @State private var showSettings = false
     
     var body: some View {
         GeometryReader { geometry in
@@ -47,40 +48,24 @@ struct StartView: View {
             
             HStack(spacing: 30) {
                 BottomTabItemView(title: "Translator", image: "bubble.left.and.bubble.right", selectedTab: $selectedTab)
-                    .padding(.leading, 12)
-                NavigationStack {
-                    NavigationLink(
-                        destination: SettingsView(),
-                        isActive: .constant(selectedTab == "Clicker")
-                    ) {
-                        BottomTabItemView(title: "Clicker", image: "gearshape", selectedTab: $selectedTab)
-                    }
-                }
+                BottomTabItemView(title: "Clicker", image: "gearshape", selectedTab: $selectedTab)
             }
-                .frame(width: 216, height: 82)
-                .background(Color.white)
-                .cornerRadius(16)
-                .shadow(radius: 4)
-                .position(x: 1 + 200, y: 1 + 716)
+            .frame(width: 216, height: 82)
+            .background(Color.white)
+            .cornerRadius(16)
+            .shadow(radius: 4)
+            .position(x: 1 + 200, y: 1 + 716)
+            if selectedTab == "Clicker" {
+                SettingsView(selectedTab: .constant("Clicker"))
+                    .frame(width: 900, height: 900)
+                    .transition(.move(edge: .trailing))
+            }
         }
     }
 }
 
 #Preview {
     StartView()
-}
-
-struct GradientView: View {
-    var body: some View {
-        ZStack {
-            LinearGradient(
-                gradient: Gradient(colors: [Color.theme.lightGreen, Color.theme.white]),
-                startPoint: .bottom,
-                endPoint: .top
-            )
-            .ignoresSafeArea()
-        }
-    }
 }
 
 struct TitleView: View {
