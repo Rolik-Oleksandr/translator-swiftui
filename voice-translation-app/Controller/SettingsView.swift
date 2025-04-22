@@ -11,21 +11,13 @@ struct SettingsView: View {
             }
             
             VStack {
-                
-                Text("⚙️ Settings View")
-                    .font(.largeTitle)
-                    .frame(width: 216, height: 82)
-                    .padding(.horizontal, 20)
-                    .background(Color.white)
-                    .cornerRadius(16)
-                    .shadow(radius: 4)
-                    .padding(.bottom, 30)
+                TitleView(title: "Settings")
             }
             .frame(maxWidth: 100, maxHeight: 100)
             .position(x: 1 + 200, y: 1 + 300)
             HStack(spacing: 30){
                 BottomTabItemView(title: "Translator", image: "bubble.left.and.bubble.right", selectedTab: $showNavigation)
-                BottomTabItemView(title: "Clicker", image: "gear", selectedTab: $showNavigation)
+                BottomTabItemView(title: "Clicker", image: "gearshape", selectedTab: $showNavigation)
                 }
             .frame(width: 216, height: 82)
             .background(Color.white)

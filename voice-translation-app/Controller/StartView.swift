@@ -10,7 +10,7 @@ struct StartView: View {
             ZStack {
                 GradientView()
             }
-            TitleView()
+            TitleView(title: "Translator")
             
             VStack {
                 Image(selectedAnimal)
@@ -64,9 +64,11 @@ struct StartView: View {
 }
 
 struct TitleView: View {
+    let title: String
+    
     var body: some View {
         HStack {
-            Text("Translator")
+            Text(title)
                 .frame(width: 350, height: 58)
                 .font(.largeTitle)
                 .foregroundColor(.black)
