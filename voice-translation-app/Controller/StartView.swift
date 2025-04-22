@@ -57,15 +57,10 @@ struct StartView: View {
             .position(x: 1 + 200, y: 1 + 716)
             if selectedTab == "Clicker" {
                 SettingsView(selectedTab: .constant("Clicker"))
-                    .frame(width: 900, height: 900)
                     .transition(.move(edge: .trailing))
             }
         }
     }
-}
-
-#Preview {
-    StartView()
 }
 
 struct TitleView: View {
@@ -148,4 +143,8 @@ struct MicroRectView: View {
                 .font(.headline)
         }
     }
+}
+
+#Preview {
+    StartView()
 }
