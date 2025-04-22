@@ -9,16 +9,24 @@ struct SettingsView: View {
             ZStack {
                 GradientView()
             }
+            TitleView(title: "Settings")
+                .padding(.horizontal, 10)
             
-            VStack {
-                TitleView(title: "Settings")
+        
+            VStack(spacing: 15) {
+                SettingsCell(title: "Rate us")
+                SettingsCell(title: "Share App")
+                SettingsCell(title: "Contact Us")
+                SettingsCell(title: "Restore Purchases")
+                SettingsCell(title: "Privacy Policy")
+                SettingsCell(title: "Terms of Use")
             }
-            .frame(maxWidth: 100, maxHeight: 100)
-            .position(x: 1 + 200, y: 1 + 300)
+            .padding(.vertical, 100)
+            
             HStack(spacing: 30){
                 BottomTabItemView(title: "Translator", image: "bubble.left.and.bubble.right", selectedTab: $showNavigation)
                 BottomTabItemView(title: "Clicker", image: "gearshape", selectedTab: $showNavigation)
-                }
+            }
             .frame(width: 216, height: 82)
             .background(Color.white)
             .cornerRadius(16)
@@ -30,6 +38,26 @@ struct SettingsView: View {
             }
         }
     }
+}
+
+struct SettingsCell : View {
+    let title: String
+    
+    var body: some View {
+        HStack {
+            Text(title)
+                .fontWeight(.semibold)
+                .foregroundColor(.black)
+            Spacer()
+            Image(systemName: "chevron.right")
+                .foregroundColor(.black.opacity(0.6))
+        }
+        .padding()
+        .background(Color.theme.settingCellViewLightBlue)
+        .cornerRadius(20)
+        .padding(.horizontal)
+    }
+    
 }
 
 #Preview {

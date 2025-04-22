@@ -11,6 +11,7 @@ struct ColorTheme {
     let lightGreen = Color(hex: "#C9FFE0")
     let white = Color(hex: "#F3F5F6")
     let animalBackGroundGreen = Color(hex: "#ECFBC7")
+    let settingCellViewLightBlue = Color(hex: "#D6DCFF")
 }
 
 extension Color {

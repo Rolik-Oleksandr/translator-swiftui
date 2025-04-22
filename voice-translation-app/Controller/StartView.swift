@@ -71,6 +71,7 @@ struct TitleView: View {
             Text(title)
                 .frame(width: 350, height: 58)
                 .font(.largeTitle)
+                .bold()
                 .foregroundColor(.black)
             Spacer()
         }
