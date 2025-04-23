@@ -4,6 +4,7 @@ struct StartView: View {
     @State private var selectedTab = "Translator"
     @State private var selectedAnimal = "dog"
     @State private var showSettings = false
+    @State private var isShowingResultView = false
     
     var body: some View {
         GeometryReader { geometry in
@@ -25,6 +26,9 @@ struct StartView: View {
                 .cornerRadius(20)
                 .shadow(radius: 2)
                 .position(x: 35 + 100, y: 230 + 88)
+                .onTapGesture {
+                    isShowingResultView = true
+                }
             
             VStack {
                 SelectAnimalView(
@@ -58,6 +62,9 @@ struct StartView: View {
             if selectedTab == "Clicker" {
                 SettingsView(selectedTab: .constant("Clicker"))
                     .transition(.move(edge: .trailing))
+            }
+            if isShowingResultView {
+                ResultSpeechView(selectedAnimal: $selectedAnimal)
             }
         }
     }
@@ -141,7 +148,7 @@ struct MicroRectView: View {
         VStack {
             Image(systemName: "mic")
                 .font(.system(size: 48))
-                .padding(.bottom, 8)
+                .padding(.bottom, 12)
             Text("Start Speak")
                 .font(.headline)
         }
