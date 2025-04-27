@@ -24,9 +24,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1A89A0B12DA7D978002EE975 /* voice-translation-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "voice-translation-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A89A0C12DA7D97A002EE975 /* voice-translation-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "voice-translation-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A89A0CB2DA7D97A002EE975 /* voice-translation-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "voice-translation-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A89A0B12DA7D978002EE975 /* translator-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "translator-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A89A0C12DA7D97A002EE975 /* translator-swiftuiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "translator-swiftuiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A89A0CB2DA7D97A002EE975 /* translator-swiftuiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "translator-swiftuiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -85,9 +85,9 @@
 		1A89A0B22DA7D978002EE975 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1A89A0B12DA7D978002EE975 /* voice-translation-app.app */,
-				1A89A0C12DA7D97A002EE975 /* voice-translation-appTests.xctest */,
-				1A89A0CB2DA7D97A002EE975 /* voice-translation-appUITests.xctest */,
+				1A89A0B12DA7D978002EE975 /* translator-swiftui.app */,
+				1A89A0C12DA7D97A002EE975 /* translator-swiftuiTests.xctest */,
+				1A89A0CB2DA7D97A002EE975 /* translator-swiftuiUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1A89A0B02DA7D978002EE975 /* voice-translation-app */ = {
+		1A89A0B02DA7D978002EE975 /* translator-swiftui */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A89A0D52DA7D97A002EE975 /* Build configuration list for PBXNativeTarget "voice-translation-app" */;
+			buildConfigurationList = 1A89A0D52DA7D97A002EE975 /* Build configuration list for PBXNativeTarget "translator-swiftui" */;
 			buildPhases = (
 				1A89A0AD2DA7D978002EE975 /* Sources */,
 				1A89A0AE2DA7D978002EE975 /* Frameworks */,
@@ -110,16 +110,16 @@
 			fileSystemSynchronizedGroups = (
 				1A89A0B32DA7D978002EE975 /* voice-translation-app */,
 			);
-			name = "voice-translation-app";
+			name = "translator-swiftui";
 			packageProductDependencies = (
 			);
 			productName = "voice-translation-app";
-			productReference = 1A89A0B12DA7D978002EE975 /* voice-translation-app.app */;
+			productReference = 1A89A0B12DA7D978002EE975 /* translator-swiftui.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1A89A0C02DA7D97A002EE975 /* voice-translation-appTests */ = {
+		1A89A0C02DA7D97A002EE975 /* translator-swiftuiTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A89A0D82DA7D97A002EE975 /* Build configuration list for PBXNativeTarget "voice-translation-appTests" */;
+			buildConfigurationList = 1A89A0D82DA7D97A002EE975 /* Build configuration list for PBXNativeTarget "translator-swiftuiTests" */;
 			buildPhases = (
 				1A89A0BD2DA7D97A002EE975 /* Sources */,
 				1A89A0BE2DA7D97A002EE975 /* Frameworks */,
@@ -133,16 +133,16 @@
 			fileSystemSynchronizedGroups = (
 				1A89A0C42DA7D97A002EE975 /* voice-translation-appTests */,
 			);
-			name = "voice-translation-appTests";
+			name = "translator-swiftuiTests";
 			packageProductDependencies = (
 			);
 			productName = "voice-translation-appTests";
-			productReference = 1A89A0C12DA7D97A002EE975 /* voice-translation-appTests.xctest */;
+			productReference = 1A89A0C12DA7D97A002EE975 /* translator-swiftuiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1A89A0CA2DA7D97A002EE975 /* voice-translation-appUITests */ = {
+		1A89A0CA2DA7D97A002EE975 /* translator-swiftuiUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A89A0DB2DA7D97A002EE975 /* Build configuration list for PBXNativeTarget "voice-translation-appUITests" */;
+			buildConfigurationList = 1A89A0DB2DA7D97A002EE975 /* Build configuration list for PBXNativeTarget "translator-swiftuiUITests" */;
 			buildPhases = (
 				1A89A0C72DA7D97A002EE975 /* Sources */,
 				1A89A0C82DA7D97A002EE975 /* Frameworks */,
@@ -156,11 +156,11 @@
 			fileSystemSynchronizedGroups = (
 				1A89A0CE2DA7D97A002EE975 /* voice-translation-appUITests */,
 			);
-			name = "voice-translation-appUITests";
+			name = "translator-swiftuiUITests";
 			packageProductDependencies = (
 			);
 			productName = "voice-translation-appUITests";
-			productReference = 1A89A0CB2DA7D97A002EE975 /* voice-translation-appUITests.xctest */;
+			productReference = 1A89A0CB2DA7D97A002EE975 /* translator-swiftuiUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1A89A0AC2DA7D978002EE975 /* Build configuration list for PBXProject "voice-translation-app" */;
+			buildConfigurationList = 1A89A0AC2DA7D978002EE975 /* Build configuration list for PBXProject "translator-swiftui" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -200,9 +200,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1A89A0B02DA7D978002EE975 /* voice-translation-app */,
-				1A89A0C02DA7D97A002EE975 /* voice-translation-appTests */,
-				1A89A0CA2DA7D97A002EE975 /* voice-translation-appUITests */,
+				1A89A0B02DA7D978002EE975 /* translator-swiftui */,
+				1A89A0C02DA7D97A002EE975 /* translator-swiftuiTests */,
+				1A89A0CA2DA7D97A002EE975 /* translator-swiftuiUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,12 +258,12 @@
 /* Begin PBXTargetDependency section */
 		1A89A0C32DA7D97A002EE975 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1A89A0B02DA7D978002EE975 /* voice-translation-app */;
+			target = 1A89A0B02DA7D978002EE975 /* translator-swiftui */;
 			targetProxy = 1A89A0C22DA7D97A002EE975 /* PBXContainerItemProxy */;
 		};
 		1A89A0CD2DA7D97A002EE975 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1A89A0B02DA7D978002EE975 /* voice-translation-app */;
+			target = 1A89A0B02DA7D978002EE975 /* translator-swiftui */;
 			targetProxy = 1A89A0CC2DA7D97A002EE975 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -398,6 +398,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"voice-translation-app/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -426,6 +428,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"voice-translation-app/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -458,7 +462,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/voice-translation-app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/voice-translation-app";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/translator-swiftui.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/translator-swiftui";
 			};
 			name = Debug;
 		};
@@ -476,7 +480,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/voice-translation-app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/voice-translation-app";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/translator-swiftui.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/translator-swiftui";
 			};
 			name = Release;
 		};
@@ -517,7 +521,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A89A0AC2DA7D978002EE975 /* Build configuration list for PBXProject "voice-translation-app" */ = {
+		1A89A0AC2DA7D978002EE975 /* Build configuration list for PBXProject "translator-swiftui" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A89A0D32DA7D97A002EE975 /* Debug */,
@@ -526,7 +530,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A89A0D52DA7D97A002EE975 /* Build configuration list for PBXNativeTarget "voice-translation-app" */ = {
+		1A89A0D52DA7D97A002EE975 /* Build configuration list for PBXNativeTarget "translator-swiftui" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A89A0D62DA7D97A002EE975 /* Debug */,
@@ -535,7 +539,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A89A0D82DA7D97A002EE975 /* Build configuration list for PBXNativeTarget "voice-translation-appTests" */ = {
+		1A89A0D82DA7D97A002EE975 /* Build configuration list for PBXNativeTarget "translator-swiftuiTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A89A0D92DA7D97A002EE975 /* Debug */,
@@ -544,7 +548,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A89A0DB2DA7D97A002EE975 /* Build configuration list for PBXNativeTarget "voice-translation-appUITests" */ = {
+		1A89A0DB2DA7D97A002EE975 /* Build configuration list for PBXNativeTarget "translator-swiftuiUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A89A0DC2DA7D97A002EE975 /* Debug */,
